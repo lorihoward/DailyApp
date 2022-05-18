@@ -1,0 +1,9 @@
+<div>
+    <h1>{{myTask.name}} </h1>
+    <h3>Items needed: <span>{{myTask.items}}</span></h3>
+    <h3>Time to complete:<span> {{myTask.time}} </span></h3>
+    <h3>Description: <span> {{myTask.description}} </span></h3>
+
+<a class="btn" routerLink="/edit/{{ id }}" routerLinkActive="active">Edit Task</a><br>
+<button (click) = "deleteTask(id)">That's Done</button>
+</div>

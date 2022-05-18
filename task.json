@@ -1,0 +1,25 @@
+{
+  "task": [
+    {
+      "id": 1,
+      "name": "Family Laundry",
+      "time": "All day",
+      "items": "Laundry detergent, washer/dryer.",
+      "description": "Wash, fold, and put away kids laundry."
+    },
+    {
+      "id": 2,
+      "name": "Clean Floors",
+      "time": "1 hour",
+      "items": "Broom, mop, bucket, vacuum.",
+      "description": "Sweep and mop tile floors, and vacuum carpets."
+    },
+    {
+      "id": 3,
+      "name": "Wash Car",
+      "time": "30 minutes",
+      "items": "Car keys",
+      "description": "Run car through car wash, vacuum interior."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<div>
+<h3>Create a New Task</h3>
+<form (ngSubmit)="createNew()">
+    <label> Task Name: </label> 
+    <input type="text" name="taskName" [(ngModel)]="newTask.name">
+    <br>
+    <label> Time to complete: </label> 
+    <input type="text" name="taskTime" [(ngModel)]="newTask.time">
+    <br>
+    <label> Items Needed: </label> 
+    <input type="text" name="taskItem" [(ngModel)]="newTask.items">
+    <br>
+    <label> Description: </label> 
+    <input type="text" name="taskDescription" [(ngModel)]="newTask.description">
+    <br>
+    <button type="submit">Create Task</button>
+</form>
+</div>
+
