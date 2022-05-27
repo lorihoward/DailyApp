@@ -7,9 +7,13 @@ import { AccountService } from '../services/account.service';
 export class ListComponent implements OnInit {
     users = null;
 
+    loggedUser = null;
+
     constructor(private accountService: AccountService) {}
 
     ngOnInit() {
+        this.loggedUser = JSON.parse(localStorage.getItem('user'));
+
         this.accountService.getAll()
             .pipe(first())
             .subscribe(users => this.users = users);

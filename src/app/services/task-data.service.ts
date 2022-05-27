@@ -15,7 +15,9 @@ export class TaskDataService {
 
   //task list
   getTask = (): Observable<Task[]> => {
-    return this.http.get<Task[]>(this.taskURL);
+    const user = JSON.parse(localStorage.getItem('user'));
+    
+    return this.http.get<Task[]>(this.taskURL + '?user_id=' + user.id);
   }
 
   //task details
@@ -35,6 +37,8 @@ export class TaskDataService {
 
   //create task
   createTask(newTask: Task): Observable<Task> {
+    const user = JSON.parse(localStorage.getItem('user'));
+    newTask.user_id = user.id;
     return this.http.post<Task>(this.taskURL, newTask)
   }
 }
