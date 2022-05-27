@@ -1,10 +1,16 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a class="nav-item nav-link" routerLink="/create" routerLinkActive="active">New Task</a>
+        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+
 <div id="header">
-    <nav>
-        <a class="btn" routerLink="/list" routerLinkActive="active">Task List</a> 
-        <a class="btn" routerLink="/create" routerLinkActive="active">Add New Task</a>
-    </nav>
-    <h1>Lori's Task List</h1> 
-    <img alt="Angular Logo" src="../assets/tasks.jpg">
+    <h1>Daily</h1> 
+    <img alt="To Do List" src="../assets/tasks.jpg">
     <hr>
 </div>
 <router-outlet></router-outlet>

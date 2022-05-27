@@ -20,6 +20,13 @@
       "time": "30 minutes",
       "items": "Car keys",
       "description": "Run car through car wash, vacuum interior."
+    },
+    {
+      "name": "Edit Project",
+      "time": "3 hours",
+      "items": "Computer, Coffee",
+      "description": "Add username to welcome page.",
+      "id": 4
     }
   ]
 }
